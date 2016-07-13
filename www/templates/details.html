@@ -1,6 +1,116 @@
 <ion-view view-title="Trip Details">
   <ion-content>
-  <h1> Sample app changes </h1>
-  <h2> Using the Ionic frameweork</h2>
+  	<div ng-controler="detailsCtrl" ng-repeat='trip in trips'>
+  		<div class="row">
+  			<h2>{{trip.destination}}</h2>
+  		</div>
+
+  		<div class="row">
+  			<div class="col">
+  				<ul class="list">
+    				<li class="item">Base</li>
+    				<li class="item">Dates</li>
+    				<li class="item">Trip Type</li>
+    				<li class="item">Report Time</li>
+    				<li class="item">Release Time</li>
+    				<li class="item">Destination</li>
+    				<li class="item">Layover lenght</li>
+    				<li class="item">Position</li>
+    				<li class="item">TFP</li>
+    				<li class="item">$Bonus$</li>
+    				<li class="item">Days</li>
+    				<li class="item">Posted By</li>
+    				<li class="item">Comment</li>
+				</ul>
+			</div>
+
+  			<div class="col">
+  				<ul class="list" ng-repeat='trip in trips'>
+    				<li class="item">{{trip.base}}</li>
+    				<li class="item">{{trip.dates}}</li>
+    				<li class="item">{{trip.tripType}}</li>
+    				<li class="item">{{trip.reportTime}}</li>
+    				<li class="item">{{trip.releaseTime}}</li>
+    				<li class="item">{{trip.destination}}</li>
+    				<li class="item">{{trip.layoverLength}}</li>
+    				<li class="item">{{trip.position}}</li>
+    				<li class="item">{{trip.tfp}}</li>
+    				<li class="item">{{trip.bonus}}</li>
+    				<li class="item">{{trip.days}}</li>
+    				<li class="item">{{trip.postedBy}}</li>
+    				<li class="item">{{trip.comment}}</li>
+				</ul>
+  			</div>
+		</div>
+
+  		<!--<div class="list">
+
+  			<div class="item item-divider">
+    		Base
+  			</div>
+
+  				<ul class="list">
+    				<li class="item">{{trip.base}}</li>
+				</ul>
+
+			<div class="item item-divider">
+    		Dates
+  			</div>
+
+  				<ul class="list">
+    				<li class="item">{{trip.dates}}</li>
+				</ul>
+
+  		</div>-->
+
+  		<!--<table border="6">
+  			<thead>
+  				<th>Dates</th>
+  				<th>Base</th>
+  				<th>Trip Type</th>
+  				<th>Report Time</th>
+  				<th>Release Time</th>
+  				<th>Destination</th>
+  				<th>Layover length</th>
+  				<th>Position</th>
+  				<th>TFP</th>
+  				<th>$Bonus$</th>
+  				<th># of Days</th>
+  			</thead>
+  				<tbody>
+  					<tr>
+  						<td>{{trip.dates}}</td>
+  						<td>{{trip.base}}</td>
+  						<td>{{trip.tripType}}</td>
+  						<td>{{trip.reportTime}}</td>
+  						<td>{{trip.releaseTime}}</td>
+  						<td>{{trip.destination}}</td>
+  						<td>{{trip.layOver}}</td>
+  						<td>{{trip.position}}</td>
+  						<td>{{trip.tfp}}</td>
+  						<td>{{trip.bonus}}</td>
+  						<td>{{trip.days}}</td>
+  					</tr>
+  				</tbody>
+  		</table>-->
+  	</div>
+	
+  	<div class="row">
+  		<div class="col col-33">
+  			<button class="button button-positive">
+  			Pick-up</button>
+  		</div>
+  		<div class="col col-33">
+  			<button class="button button-positive">
+  			Drop</button>
+  		</div>
+  		<div class="col col-33">
+  			<button class="button button-positive">
+  			Trade</button>
+		</div>
+	</div>
+
   </ion-content>
 </ion-view>
+
+
