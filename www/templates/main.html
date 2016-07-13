@@ -1,5 +1,29 @@
-<ion-view view-title="My Trips">
+<ion-view view-title="My Trips" ng-controller="mainCtrl.js">
   <ion-content>
+  	<div>
     <h1>My Trips</h1>
+    </div>
+    <div>
+    <h1>Calendar goes here</h1>
+    <div ui-calendar="uiConfig.calendar" class="span8 calendar" ng-model="eventSources"></div> 
+    </div>
+    <h2>Matches</h2>
+    <div>
+    <h3>Matching trips go here<h3>
+    <ion-list>
+    	<ion-item>Here is a flight match1</ion-item>
+    	<ion-item>Here is a flight match2</ion-item>
+    	<ion-item>Here is a flight match3</ion-item>
+    	<ion-item>Here is a flight match4</ion-item>
+    </ion-list>
+    </div>
+    <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.css"/>
+    <!-- jquery, moment, and angular have to get included before fullcalendar -->
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-ui-calendar/src/calendar.js"></script>
+    <script type="text/javascript" src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="bower_components/fullcalendar/dist/gcal.js"></script>
   </ion-content>
 </ion-view>
